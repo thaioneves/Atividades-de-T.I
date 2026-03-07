@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Pré-Matricula</title>
+</head>
+<body>
+    <h1 style="color: green;">SENAC</h1>
+    <h2>Formulário de Pré-Matricula</h2>
+    <form>
+        <legend style="color: green;">Dados do Aluno</legend>
+        <div>
+            <label for="name"> Nome Completo:</label>
+        </div>
+        <div>
+            <input type="text" for="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+        </div>
+        <div>
+            <input type="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="data">Data de Nascimento:</label>
+        </div>
+        <div>
+            <input type="date">
+        </div>
+        <br>
+        <div>
+            <label for="cor">Cor Favorita:</label>
+        </div>
+        <div>
+            <input type="color" name="cor">
+        </div>
+    <br> <br>
+        <legend style="color: green;">Curso</legend>
+        <div>
+            <label for="opcoes_curso">Escolha o Curso:</label>
+        </div>
+        <div>
+            <input list="opcoes_curso">
+            <datalist id="opcoes_curso">
+                <option value="Informática"></option>
+                <option value="Culinária"></option>
+                <option value="Enfermagem"></option>
+                <option value="Nutrição"></option>
+                <option value="Moda"></option>
+            </datalist>
+        </div>
+        <BR>
+        <div>
+            <label for="periodo">Período:</label>
+        </div>
+        <div>
+            <input type="radio" value="manha" name="periodo_curso">
+            <label for="manha">Manhã</label>
+        </div>
+        <div>
+            <input type="radio" value="tarde" name="periodo_curso">
+            <label for="tarde">Tarde</label>
+        </div>
+        <div>
+            <input type="radio" value="noite" name="periodo_curso">
+            <label for="noite">Noite</label>
+        </div>
+        <br><br>
+        <div>
+            <label for="conhecimento" style="color: green;">Conhecimento Prévios</label>
+        </div>
+        <div>
+            <input type="checkbox" name="conhecimento []">
+            <label>HTML</label>
+        </div>
+        <div>
+            <input type="checkbox" name="conhecimento []">
+            <label>JavaScript</label>
+        </div>
+        <div>
+            <input type="checkbox" name="conhecimento []">
+            <label>Banco de Dados</label>
+        </div>
+        <div>
+            <input type="checkbox" name="conhecimento []">
+            <label>Nenhum conhecimento</label>
+        </div>
+        <br><br>
+        <div>
+            <label style="color: green;" for="avaliacao">Avaliação Inicial</label>
+        </div>
+        <div>
+            <label for="avaliacao">Nível de conhecimento em tecnologia:</label>
+        </div>
+        <div>
+            <input type="range" min="0" max="10" value="5">
+        </div>
+        <br><br>
+        <div>
+            <label style="color: green;" for="Documentos">Documentos</label>
+        </div>
+        <div>
+            <label for="Documentos">Enviar documento:</label>
+        </div>
+        <div>
+            <input type="file">
+        </div>
+        <br><br>
+        <div>
+            <label for="termos" style="color: green;"> Termos</label>
+        </div>
+        <div>
+            <input type="checkbox" name="termos">
+            <label>Li e aceito os termos da matrícula.</label>
+        </div>
+        <br> <br>
+        <div>
+            <button type="submit">Enviar Matricula </button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
